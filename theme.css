@@ -85,7 +85,7 @@
   --background-tertiary: rgba(0, 0, 0, 0.15);
   /* Font color of channels and members (sidebar left and sidebar right) */
   --channels-default: rgb(170, 172, 177);
-  --theme-transparency: rgba(0, 0, 0, 0.75);
+  --theme-transparency: rgba(0, 0, 0, 0.65);
 
   --text-voice-channel-color: var(--channels-default);
   --text-voice-channel-hover-color: #fff;
