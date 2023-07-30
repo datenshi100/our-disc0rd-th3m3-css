@@ -77,6 +77,32 @@
   
 }
 
+body,
+button,
+input,
+select,
+textarea,
+::placeholder {
+  font-family: var(--customFont);
+}
+
+.typeWindows-2-g3UY > .wordmark-2u86JB:after {
+  font-family: var(--customFont);
+  font-size: 10px;
+}
+
+.theme-dark .container-1NXEtd .header-3OsQeK {
+  font-family: var(--customFont);
+}
+
+.container-ZMc96U .base-21yXnu {
+  font-family: var(--customFont);
+}
+
+.title-1v5ZfI {
+  font-family: var(--customFont);
+}
+
 .theme-dark {
   /* Background color Themes menu*/
   --background-secondary: rgba(0, 0, 0, 0.45);
