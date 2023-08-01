@@ -348,3 +348,56 @@ textarea,
 .theme-light .text-27cdrj {
     color: rgb(60, 60, 60);
 }
+
+/* User small popout */
+.userPopoutInner-nv9Y92.userProfileInner-1ngKnf.userProfileInnerThemedWithBanner-25XGmz,
+.userPopoutInner-nv9Y92.userProfileInner-1ngKnf.userProfileInnerThemedNonPremium-2AJg-H {
+    background: var(--small-user-popout-background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.userPopoutInner-nv9Y92.userProfileInner-1ngKnf.userProfileInnerThemedWithBanner-25XGmz {
+    background-size: 99%;
+    background-position-y: 99%;
+}
+
+.userPopoutInner-nv9Y92.userProfileInner-1ngKnf.userProfileInnerThemedNonPremium-2AJg-H {
+    background-size: 100%;
+    background-position-y: -20%;
+}
+
+.userPopoutInner-nv9Y92.userProfileInner-1ngKnf.userProfileInnerThemedWithBanner-25XGmz .userPopoutOverlayBackground-3A0Pcz.overlayBackground-2aa7wt {
+    background-color: transparent;
+}
+
+.userPopoutInner-nv9Y92.userProfileInner-1ngKnf.userProfileInnerThemedNonPremium-2AJg-H .userPopoutOverlayBackground-3A0Pcz.overlayBackground-2aa7wt {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* User modal detail popout */
+.userProfileModalInner-3dx9L9.userProfileInner-1ngKnf.userProfileInnerThemedWithBanner-25XGmz,
+.userProfileModalInner-3dx9L9.userProfileInner-1ngKnf.userProfileInnerThemedNonPremium-2AJg-H {
+    background: var(--big-user-popout-background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.userProfileModalInner-3dx9L9.userProfileInner-1ngKnf.userProfileInnerThemedWithBanner-25XGmz {
+    background-size: 143%;
+    background-position-y: 99%;
+}
+
+@media (min-height: 900px) {
+    .userProfileModalInner-3dx9L9.userProfileInner-1ngKnf.userProfileInnerThemedWithBanner-25XGmz {
+        background-size: 150%;
+        background-position-y: 95%;
+        background-color: var(--main-theme-color);
+    }
+}
+
+.userProfileModalOverlayBackground-2dAaBg.overlayBackground-2aa7wt {
+    background-color: transparent;
+}
