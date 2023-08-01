@@ -2,79 +2,94 @@
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 
 :root {
-  /* Modify RBG colors to change the theme color */
-  --main-theme-color-value: 0, 0, 0;
-  --main-theme-color: rgb(var(--main-theme-color-value));
-  
-  --home-icon-image-zoom: 125%;
-  --home-icon-image-position: center;
+    /* Modify RBG colors to change the theme color */
+    --main-theme-color-value: 0, 0, 0;
+    --main-theme-color: rgb(var(--main-theme-color-value));
 
-  /*
+    --home-icon-image-zoom: 125%;
+    --home-icon-image-position: center;
+
+    /*
     Server Listing Width
     Single Column:  72px
     Double Column:  126px
     Triple Column:  184px
     Quad Column:    242px
   */
-  --server-listing-width: 72px;
+    --server-listing-width: 72px;
 
-  --font-size: 100%;
+    --font-size: 100%;
 
-  --mention-color: rgba(var(--main-theme-color-value), 0.2);
-  --mention-sider: var(--main-theme-color);
-  --mention-hover-color: rgba(var(--main-theme-color-value), 0.08);
+    --mention-color: rgba(var(--main-theme-color-value), 0.2);
+    --mention-sider: var(--main-theme-color);
+    --mention-hover-color: rgba(var(--main-theme-color-value), 0.08);
 
-  --category-hover-color: var(--main-theme-color);
+    --category-hover-color: var(--main-theme-color);
 
-  /*
+    /*
     Change the unread server animation.
     Replace it with "none" in order to remove any animations and use the main color instead
   */
-  --unread-server-animation: rainbow;
+    --unread-server-animation: rainbow;
 
-  --member-listing-role-color: var(--main-theme-color);
+    --member-listing-role-color: var(--main-theme-color);
 
-  --code-markup-border: 1px solid transparent;
+    --code-markup-border: 1px solid transparent;
 
-  --channel-limit-count-color: var(--main-theme-color);
-  
-  --scrollbar-color: var(--main-theme-color);
+    --channel-limit-count-color: var(--main-theme-color);
 
-  --unread-message-divider-color: var(--main-theme-color);
-  --unread-message-divider-font-color: #fff;
+    --scrollbar-color: var(--main-theme-color);
 
-  --new-messages-bar-background-color: var(--main-theme-color);
-  --new-messages-bar-font-color: #fff;
-  
-  --folder-background-color: rgb(47, 49, 54);
-  --expanded-folder-background-color: transparent;
+    --unread-message-divider-color: var(--main-theme-color);
+    --unread-message-divider-font-color: #fff;
 
-  --reaction-emoji-background-color: transparent;
-  --reaction-emoji-border-color: 1px solid transparent;
-  
-  /* Mention background color */
-  --brand-experiment-30a: rgba(var(--main-theme-color-value), 0.3);
+    --new-messages-bar-background-color: var(--main-theme-color);
+    --new-messages-bar-font-color: #fff;
 
-  /* Radial Status variables*/
-  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
-  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+    --folder-background-color: rgb(47, 49, 54);
+    --expanded-folder-background-color: transparent;
 
-  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+    --reaction-emoji-background-color: transparent;
+    --reaction-emoji-border-color: 1px solid transparent;
 
-  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+    /* Mention background color */
+    --brand-experiment-30a: rgba(var(--main-theme-color-value), 0.3);
 
-  --rs-online-color: rgb(67, 181, 129); /* Colour for online status */
-  --rs-idle-color: rgb(250, 166, 26); /* Colour for idle status */
-  --rs-dnd-color: rgb(240, 71, 71); /* Colour for dnd status */
-  --rs-offline-color: rgb(99, 107, 117); /* Colour for offline status */
-  --rs-streaming-color: rgb(100, 61, 167); /* Colour for streaming status */
-  --rs-invisible-color: rgb(116, 127, 141); /* Colour for invisible status - Note: this will only show for your own invisibility */
-  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-  
+    /* Radial Status variables*/
+    --rs-small-spacing: 2px;
+    /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 3px;
+    /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 4px;
+    /* Gap between avatar and status for User profiles | MUST end in px */
+
+    --rs-small-width: 2px;
+    /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 3px;
+    /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 4px;
+    /* Thickness of status border for User profile | MUST end in px */
+
+    --rs-avatar-shape: 50%;
+    /* 50% for round - 0% for square */
+
+    --rs-online-color: rgb(67, 181, 129);
+    /* Colour for online status */
+    --rs-idle-color: rgb(250, 166, 26);
+    /* Colour for idle status */
+    --rs-dnd-color: rgb(240, 71, 71);
+    /* Colour for dnd status */
+    --rs-offline-color: rgb(99, 107, 117);
+    /* Colour for offline status */
+    --rs-streaming-color: rgb(100, 61, 167);
+    /* Colour for streaming status */
+    --rs-invisible-color: rgb(116, 127, 141);
+    /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color);
+    /* Colour of the ring and phone icon when a user is on their phone |  */
+    --rs-phone-visible: block;
+    /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+
 }
 
 body,
@@ -83,254 +98,253 @@ input,
 select,
 textarea,
 ::placeholder {
-  font-family: var(--customFont);
+    font-family: var(--customFont);
 }
 
-.typeWindows-2-g3UY > .wordmark-2u86JB:after {
-  font-family: var(--customFont);
-  font-size: 10px;
+.typeWindows-2-g3UY>.wordmark-2u86JB:after {
+    font-family: var(--customFont);
+    font-size: 10px;
 }
 
 .theme-dark .container-1NXEtd .header-3OsQeK {
-  font-family: var(--customFont);
+    font-family: var(--customFont);
 }
 
 .container-ZMc96U .base-21yXnu {
-  font-family: var(--customFont);
+    font-family: var(--customFont);
 }
 
 .title-1v5ZfI {
-  font-family: var(--customFont);
+    font-family: var(--customFont);
 }
 
 .theme-dark {
-  /* Background color Themes menu*/
-  --background-secondary: rgba(0, 0, 0, 0.45);
-  --background-secondary-alt: rgba(var(--main-theme-color-value), 0.7);
-  /* Background color search bar and others */
-  --background-tertiary: rgba(0, 0, 0, 0.15);
-  /* Font color of channels and members (sidebar left and sidebar right) */
-  --channels-default: rgb(170, 172, 177);
-  --theme-transparency: rgba(0, 0, 0, 0.65);
+    /* Background color Themes menu*/
+    --background-secondary: rgba(0, 0, 0, 0.45);
+    --background-secondary-alt: rgba(var(--main-theme-color-value), 0.7);
+    /* Background color search bar and others */
+    --background-tertiary: rgba(0, 0, 0, 0.15);
+    /* Font color of channels and members (sidebar left and sidebar right) */
+    --channels-default: rgb(170, 172, 177);
+    --theme-transparency: rgba(0, 0, 0, 0.65);
 
-  --text-voice-channel-color: var(--channels-default);
-  --text-voice-channel-hover-color: #fff;
-  --text-voice-channel-selected-text-color: #fff;
-  --unread-text-channel-color: #fff;
-  --unread-text-channel-bubble-color: #fff;
+    --text-voice-channel-color: var(--channels-default);
+    --text-voice-channel-hover-color: #fff;
+    --text-voice-channel-selected-text-color: #fff;
+    --unread-text-channel-color: #fff;
+    --unread-text-channel-bubble-color: #fff;
 
-  /* Video / Screen share buttons */
-  --video-screen-button-background-color: rgba(200, 200, 200, 0.2);
-  --video-screen-button-foreground-color: #fff;
-  --video-screen-button-background-hovor-color: rgba(200, 200, 200, 0.4);
-  --video-screen-button-foreground-hovor-color: #fff;
+    /* Video / Screen share buttons */
+    --video-screen-button-background-color: rgba(200, 200, 200, 0.2);
+    --video-screen-button-foreground-color: #fff;
+    --video-screen-button-background-hovor-color: rgba(200, 200, 200, 0.4);
+    --video-screen-button-foreground-hovor-color: #fff;
 
-  --small-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
-  --small-user-popout-background-image-position: top;
+    --small-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
+    --small-user-popout-background-image-position: top;
 
-  --big-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
-  --big-user-popout-background-image-position: center;
+    --big-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
+    --big-user-popout-background-image-position: center;
 
-  --code-markup-background-color: rgba(0, 0, 0, 0.6);
+    --code-markup-background-color: rgba(0, 0, 0, 0.6);
 
-  --message-box-transparency: rgba(0, 0, 0, 0.6);
+    --message-box-transparency: rgba(0, 0, 0, 0.6);
 
-  --embed-background-transparency: rgba(0, 0, 0, 0.6);
+    --embed-background-transparency: rgba(0, 0, 0, 0.6);
 
-  --message-hover-buttons-background: rgba(200, 200, 200, 0.1);
+    --message-hover-buttons-background: rgba(200, 200, 200, 0.1);
 
-  --context-menu-transparency: rgba(15, 15, 15, 0.8);
+    --context-menu-transparency: rgba(15, 15, 15, 0.8);
 
-  --add-discover-icon-transparency: rgba(var(--main-theme-color-value), 0.6);
+    --add-discover-icon-transparency: rgba(var(--main-theme-color-value), 0.6);
 
-  --emoji-menu-background-color: rgba(0, 0, 0, 0.6);
-  --emoji-menu-sider-background-color: transparent;
-  --emoji-menu-server-header-background-color: rgba(0, 0, 0, 0.8);
-  --emoji-menu-bottom-bar-background-color: #000;
-  --emoji-menu-search-bar-background-color: rgba(200, 200, 200, 0.1);
+    --emoji-menu-background-color: rgba(0, 0, 0, 0.6);
+    --emoji-menu-sider-background-color: transparent;
+    --emoji-menu-server-header-background-color: rgba(0, 0, 0, 0.8);
+    --emoji-menu-bottom-bar-background-color: #000;
+    --emoji-menu-search-bar-background-color: rgba(200, 200, 200, 0.1);
 
-  --message-search-menu-background-color: rgba(0, 0, 0, 0.8);
-  --message-search-container-background-color: rgba(0, 0, 0, 0.6);
-  --message-search-result-background-color: rgba(200, 200, 200, 0.05);
+    --message-search-menu-background-color: rgba(0, 0, 0, 0.8);
+    --message-search-container-background-color: rgba(0, 0, 0, 0.6);
+    --message-search-result-background-color: rgba(200, 200, 200, 0.05);
 
-  --reaction-emoji-hover-background-color: rgba(255, 255, 255, 0.1);
-  --reaction-emoji-hover-border-color: rgba(255, 255, 255, 0.2);
+    --reaction-emoji-hover-background-color: rgba(255, 255, 255, 0.1);
+    --reaction-emoji-hover-border-color: rgba(255, 255, 255, 0.2);
 }
 
 .theme-light {
-  /* Background color Themes menu*/
-  --background-secondary: rgba(180, 180, 180, 0.6);
-  --background-secondary-alt: rgba(var(--main-theme-color-value), 0.7);
-  --background-tertiary: rgba(180, 180, 180, 0.15);
-  /* Font color of channels and members (sidebar left and sideba right) */
-  --channels-default: rgb(59, 59, 59);
-  --theme-transparency: rgba(180, 180, 180, 0.5);
+    /* Background color Themes menu*/
+    --background-secondary: rgba(180, 180, 180, 0.6);
+    --background-secondary-alt: rgba(var(--main-theme-color-value), 0.7);
+    --background-tertiary: rgba(180, 180, 180, 0.15);
+    /* Font color of channels and members (sidebar left and sideba right) */
+    --channels-default: rgb(59, 59, 59);
+    --theme-transparency: rgba(180, 180, 180, 0.5);
 
-  --text-voice-channel-color: var(--channels-default);
-  --text-voice-channel-hover-color: #000;
-  --text-voice-channel-selected-text-color: #000;
-  --unread-text-channel-color: #000;
-  --unread-text-channel-bubble-color: #000;
+    --text-voice-channel-color: var(--channels-default);
+    --text-voice-channel-hover-color: #000;
+    --text-voice-channel-selected-text-color: #000;
+    --unread-text-channel-color: #000;
+    --unread-text-channel-bubble-color: #000;
 
-  /* Video / Screen share buttons */
-  --video-screen-button-background-color: rgba(55, 55, 55, 0.2);
-  --video-screen-button-foreground-color: #000;
-  --video-screen-button-background-hovor-color: rgba(55, 55, 55, 0.4);
-  --video-screen-button-foreground-hovor-color: #000;
+    /* Video / Screen share buttons */
+    --video-screen-button-background-color: rgba(55, 55, 55, 0.2);
+    --video-screen-button-foreground-color: #000;
+    --video-screen-button-background-hovor-color: rgba(55, 55, 55, 0.4);
+    --video-screen-button-foreground-hovor-color: #000;
 
-  --small-user-popout-background-transparency: rgba(180, 180, 180, 0.6);
-  --small-user-popout-background-image-position: top;
+    --small-user-popout-background-transparency: rgba(180, 180, 180, 0.6);
+    --small-user-popout-background-image-position: top;
 
-  --big-user-popout-background-transparency: rgba(180, 180, 180, 0.6);
-  --big-user-popout-background-image-position: center;
+    --big-user-popout-background-transparency: rgba(180, 180, 180, 0.6);
+    --big-user-popout-background-image-position: center;
 
-  --code-markup-background-color: rgba(180, 180, 180, 0.6);
+    --code-markup-background-color: rgba(180, 180, 180, 0.6);
 
-  --message-box-transparency: rgba(180, 180, 180, 0.6);
+    --message-box-transparency: rgba(180, 180, 180, 0.6);
 
-  --embed-background-transparency: rgba(180, 180, 180, 0.6);
+    --embed-background-transparency: rgba(180, 180, 180, 0.6);
 
-  --message-hover-buttons-background: rgba(255, 255, 255, 0.5);
+    --message-hover-buttons-background: rgba(255, 255, 255, 0.5);
 
-  --context-menu-transparency: rgba(240, 240, 240, 0.8);
+    --context-menu-transparency: rgba(240, 240, 240, 0.8);
 
-  --add-discover-icon-transparency: rgba(55, 55, 55, 0.2);
-  --add-discover-icon-color: var(--main-theme-color);
+    --add-discover-icon-transparency: rgba(55, 55, 55, 0.2);
+    --add-discover-icon-color: var(--main-theme-color);
 
-  --channel-limit-background-left: rgba(55, 55, 55, 0.1);
-  --channel-limit-background-right: rgba(55, 55, 55, 0.2);
+    --channel-limit-background-left: rgba(55, 55, 55, 0.1);
+    --channel-limit-background-right: rgba(55, 55, 55, 0.2);
 
-  --emoji-menu-background-color: rgba(255, 255, 255, 0.6);
-  --emoji-menu-sider-background-color: transparent;
-  --emoji-menu-server-header-background-color: rgba(255, 255, 255, 0.8);
-  --emoji-menu-bottom-bar-background-color: #fff;
-  --emoji-menu-search-bar-background-color: rgba(255, 255, 255, 0.1);
+    --emoji-menu-background-color: rgba(255, 255, 255, 0.6);
+    --emoji-menu-sider-background-color: transparent;
+    --emoji-menu-server-header-background-color: rgba(255, 255, 255, 0.8);
+    --emoji-menu-bottom-bar-background-color: #fff;
+    --emoji-menu-search-bar-background-color: rgba(255, 255, 255, 0.1);
 
-  --message-search-menu-background-color: rgba(255, 255, 255, 0.8);
-  --message-search-container-background-color: rgba(255, 255, 255, 0.6);
-  --message-search-result-background-color: rgba(55, 55, 55, 0.05);
+    --message-search-menu-background-color: rgba(255, 255, 255, 0.8);
+    --message-search-container-background-color: rgba(255, 255, 255, 0.6);
+    --message-search-result-background-color: rgba(55, 55, 55, 0.05);
 
-  --reaction-emoji-hover-background-color: rgba(0, 0, 0, 0.1);
-  --reaction-emoji-hover-border-color: rgba(0, 0, 0, 0.2);
+    --reaction-emoji-hover-background-color: rgba(0, 0, 0, 0.1);
+    --reaction-emoji-hover-border-color: rgba(0, 0, 0, 0.2);
 
 }
 
 .theme-light .container-2cd8Mz {
-  background-color: initial;
+    background-color: initial;
 }
 
 .theme-dark,
 .theme-light {
-  --background-primary: var(--main-theme-color);
-  /* Separators (borders) color */
-  --background-modifier-accent: transparent;
-  /* Color of menu element hover */
-  --background-modifier-hover: rgba(var(--main-theme-color-value), 0.6);
-  /* Color of menu element selected*/
-  --background-modifier-selected: rgba(var(--main-theme-color-value), 0.7);
-  /* Tags color and others */
-  --brand-experiment: var(--main-theme-color);
+    --background-primary: var(--main-theme-color);
+    /* Separators (borders) color */
+    --background-modifier-accent: transparent;
+    /* Color of menu element hover */
+    --background-modifier-hover: rgba(var(--main-theme-color-value), 0.6);
+    /* Color of menu element selected*/
+    --background-modifier-selected: rgba(var(--main-theme-color-value), 0.7);
+    /* Tags color and others */
+    --brand-experiment: var(--main-theme-color);
 }
 
 /* Selector for small user popout background */
 .userPopout-2j1gM4 {
-  background-size: cover;
+    background-size: cover;
 }
 
 /* Selector for big user popout background */
 .root-8LYsGj {
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Chapuzillas*/
 
 .titleBar-1it3bQ,
 .typeWindows-2-g3UY {
-  --background-shading: 100%;
-  height: 18px;
-  width: 100vw;
-  margin: 0;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: var(--main-theme-color);
+    --background-shading: 100%;
+    height: 18px;
+    width: 100vw;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: var(--main-theme-color);
 }
 
 /* Text area to send messages */
 .channelTextArea-1FufC0 {
-  background-color: rgba(var(--main-theme-color-value), 0.3);
+    background-color: rgba(var(--main-theme-color-value), 0.3);
 }
 
 /* Servers bar background color */
 .wrapper-1_HaEi {
-  background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .theme-light .wrapper-1_HaEi {
-  background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Friends (sidebar home) hover*/
 .link-39sEB3:hover,
 .interactiveSelected-29CP8y .link-39sEB3 {
-  color: var(--text-voice-channel-hover-color);
+    color: var(--text-voice-channel-hover-color);
 }
 
 /* Main menu messages icons*/
-.actionButton-3-B2x-{
-  background-color: rgba(127, 127, 127, 0.25);
+.actionButton-3-B2x- {
+    background-color: rgba(127, 127, 127, 0.25);
 }
 
-.theme-light .actionButton-3-B2x-{
-  background-color: rgba(255, 255, 255, 0.25);
+.theme-light .actionButton-3-B2x- {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* Vertical separator between main screen and right sidebar*/
 .scroller-hE2gWq {
-  border-left: 1px solid var(--main-theme-color);
+    border-left: 1px solid var(--main-theme-color);
 }
 
 /* Right sidebar home screen (Activity friends) */
 .container-1oAagU {
-  background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .theme-light .container-1oAagU {
-  background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* left sidebar (Friends And Categorye Servers)*/
 .sidebar-1tnWFu {
-  background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .theme-light .sidebar-1tnWFu {
-  background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Right sidebar Chat/Server (Server Members)*/
 .container-2o3qEW {
-  background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .theme-light .container-2o3qEW {
-  background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Date chat*/
-.content-3spvdd{
-  background-color: var(--main-theme-color) ;
-  color: #fff;
+.content-3spvdd {
+    background-color: var(--main-theme-color);
+    color: #fff;
 }
 
 /* Date unread messages */
 .isUnread-3Lojb- .content-3spvdd {
-  background-color: red;
-  color: #fff;
+    background-color: red;
+    color: #fff;
 }
 
 /* Theme light nobody is connected text */
 .theme-light .text-27cdrj {
-  color: rgb(60, 60, 60);
+    color: rgb(60, 60, 60);
 }
-
