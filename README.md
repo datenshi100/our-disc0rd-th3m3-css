@@ -1,1 +1,1 @@
-Another discord theme css
+Some theme wrote in CSS.
