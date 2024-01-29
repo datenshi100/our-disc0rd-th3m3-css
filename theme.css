@@ -401,3 +401,11 @@ textarea,
 .userProfileModalOverlayBackground-2dAaBg.overlayBackground-2aa7wt {
     background-color: transparent;
 }
+
+/* Sidebar cute mascot*/
+.nowPlayingColumn_f5023f {
+    background-image: var(--sidebar-mascot-image);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
